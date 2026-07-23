@@ -818,3 +818,145 @@ footer .end span{
     background: #fac031;
     border-radius: 15px;
 }
+
+/* ========================= */
+/* Responsive Design */
+/* ========================= */
+
+@media (max-width:992px){
+
+    .menu .menu_box{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .gallary .gallary_image_box{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .team .team_box{
+        flex-wrap:wrap;
+    }
+
+    .review .review_box{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .about .about_main,
+    .order .order_main,
+    section .main{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+@media (max-width:768px){
+
+    section{
+        height:auto;
+        padding-bottom:50px;
+    }
+
+    section nav{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    section nav ul li{
+        display:block;
+        margin:10px 0;
+    }
+
+    section .main{
+        flex-direction:column;
+        top:80px;
+    }
+
+    section .main .men_text h1{
+        font-size:35px;
+        top:0;
+        left:0;
+    }
+
+    section .main .main_image img{
+        width:100%;
+        left:0;
+    }
+
+    section p{
+        width:90%;
+        left:5%;
+        bottom:0;
+    }
+
+    section .main_btn{
+        left:5%;
+        bottom:0;
+    }
+
+    .about{
+        height:auto;
+    }
+
+    .about .about_main{
+        flex-direction:column;
+    }
+
+    .about .about_main .image img{
+        width:100%;
+    }
+
+    .about .about_main .about_text p{
+        width:100%;
+    }
+
+    .menu .menu_box{
+        grid-template-columns:1fr;
+        justify-items:center;
+    }
+
+    .gallary .gallary_image_box{
+        grid-template-columns:1fr;
+    }
+
+    .review{
+        height:auto;
+    }
+
+    .review .review_box{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .order{
+        height:auto;
+    }
+
+    .order .order_main{
+        flex-direction:column;
+    }
+
+    .order .order_main form{
+        grid-template-columns:1fr;
+    }
+
+    .order .order_main form .input input{
+        width:100%;
+    }
+
+    .team{
+        height:auto;
+        padding-bottom:50px;
+    }
+
+    .team .team_box{
+        flex-direction:column;
+        gap:30px;
+        top:0;
+    }
+
+    footer .footer_main{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+}
